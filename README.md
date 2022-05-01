@@ -4,7 +4,8 @@ The main purpose of this activity was to decouple the producer and the consumer 
 The SQS queue should have been already created through AWS console or CLI.
 
 ## Running the code
-- In order to run the project, you must configure four environment variables within .bash_profile to use in the following classes: CredentialsProvider (credentials package) and SQSGetQueueURL (services package). To open the bash_profile, run in the terminal:
+In order to run the project, you must configure four environment variables within .bash_profile to use in the following classes: CredentialsProvider (credentials package) and SQSGetQueueURL (services package). 
+- To open the bash_profile, run in the terminal:
 ```
 code ~/.bash_profile
 ```
@@ -20,6 +21,7 @@ export AWS_OWNER_ID_SQS="OWNER_ID"
 ```
 source ~/.bash_profile
 ```
+The next steps must be made separately both in the consumer and in the producer projects/folders.
 - Build the code:
 ```
 ./build.sh
