@@ -1,6 +1,6 @@
 package br.com.sqs_consumer;
 
-import br.com.sqs_consomer.services.SQSService;
+import br.com.sqs_consumer.services.SQSMessageReader;
 
 public class App 
 {
@@ -8,8 +8,8 @@ public class App
     {
         System.out.println("Lendo mensagens ...");
         while(true){
-            SQSService.messageReader();
+            SQSMessageReader.messageReader();
             // Thread.sleep(1000); // Desabilitado por causa do Long Polling para econmizar $$
-        };
+        }
     };
 };
